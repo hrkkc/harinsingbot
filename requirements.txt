@@ -1,4 +1,4 @@
-asynicio
+asyncio
 selenium
 discord.py[voice]
 pip
