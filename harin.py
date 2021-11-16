@@ -1,4 +1,5 @@
 import discord
+import os
 from discord.ext import commands
 from selenium.webdriver.chrome import options
 from youtube_dl import YoutubeDL
@@ -446,4 +447,5 @@ async def on_reaction_add(reaction, users):
             elif str(reaction.emoji) == '\U0001F4DD':
                 await reaction.message.channel.send("추후 수정 예정")
 
-bot.run('OTA5MjI5MjM4NzYxMTgxMjc0.YZBPtw.xutXZv4GPTdCxRyXWZ7B-WkDLGk')
+access_token = os.environ["BOT_TOKEN"]                
+bot.run('access_token')
